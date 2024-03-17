@@ -1,0 +1,109 @@
+@use "_variables" as var;
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: var.$primary-bg;
+  min-height: 10vh;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  z-index: 99;
+  background-color: var.$primary-black;
+  color: var.$primary-white;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.main-container {
+  margin-top: 130px;
+
+  .todo-container {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 720px;
+    border-radius: 28px;
+    box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.081),
+      0px 0px 17.9px rgba(0, 0, 0, 0.119), 0px 0px 80px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    .todo-header {
+      background-image: linear-gradient(45deg, #30f2ff, #3ad6fc, #54c1fb);
+
+      img {
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+      }
+      .todo-header-name {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px var.$primary-black;
+        color: var.$primary-white;
+      }
+    }
+
+    .todo-body {
+      background-color: var.$primary-white;
+      padding: 13px;
+
+      .todo-add {
+        background-color: var.$cheked-yellow;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        .todo-textbox {
+          outline: none;
+          padding: 20px;
+          border-radius: 25px;
+          border: 0;
+          width: 100%;
+          margin-left: 5.5%;
+        }
+        img {
+          height: 40px;
+          width: 40px;
+          position: relative;
+          right: 50px;
+          cursor: pointer;
+        }
+      }
+    }
+    ul {
+      padding-left: 0;
+      margin-top: 25px;
+    }
+    ul li {
+      list-style: none;
+      padding: 15px;
+      margin: 8px;
+      // width: 100%;
+      background-color: var.$primary-bg;
+      // border: 1px solid red;
+      font-weight: 500;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+    ul li.checked {
+      font-weight: 300;
+      text-decoration: line-through;
+      background-color: var.$cheked-green;
+    }
+  }
+}

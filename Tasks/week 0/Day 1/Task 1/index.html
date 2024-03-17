@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/sass/index.css" />
+  </head>
+  <body>
+    <header>Calculator</header>
+
+    <main>
+      <div class="calculator">
+        <div class="result">
+          <div id="problem"></div>
+          <div id="answer"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td>
+                <div class="btn btn-imp" onclick="clearAll()">AC</div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="clearr()">Del</div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="getData(this.innerText)">
+                  %
+                </div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="getData(this.innerText)">
+                  /
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">7</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">8</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">9</div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="getData(this.innerText)">
+                  *
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">4</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">5</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">6</div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="getData(this.innerText)">
+                  -
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">1</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">2</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">3</div>
+              </td>
+              <td>
+                <div class="btn btn-imp" onclick="getData(this.innerText)">
+                  +
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">0</div>
+              </td>
+              <td>
+                <div class="btn" onclick="getData(this.innerText)">.</div>
+              </td>
+              <td colspan="2">
+                <div class="btn btn-imp" onclick="calculate()">Ans</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>Created By : <span class="name">Rajput Khushal Singh</span></footer>
+    <script src="assets/js/calculator.js"></script>
+  </body>
+</html>
