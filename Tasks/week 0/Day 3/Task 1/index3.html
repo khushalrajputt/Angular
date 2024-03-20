@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/sass/index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>Calculator</header>
+
+    <main>
+      <div class="calculator">
+        <div class="result">
+          <div id="problem"></div>
+          <div id="answer"></div>
+        </div>
+        <div class="buttons">
+          <table>
+            <tr>
+              <td>
+                <div class="button button-imp" onclick="clearAll()">AC</div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="clearr()">Del</div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="getData(this.innerText)">
+                  %
+                </div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="getData(this.innerText)">
+                  /
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">7</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">8</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">9</div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="getData(this.innerText)">
+                  *
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">4</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">5</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">6</div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="getData(this.innerText)">
+                  -
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">1</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">2</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">3</div>
+              </td>
+              <td>
+                <div class="button button-imp" onclick="getData(this.innerText)">
+                  +
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">0</div>
+              </td>
+              <td>
+                <div class="button" onclick="getData(this.innerText)">.</div>
+              </td>
+              <td colspan="2">
+                <div class="button button-imp" onclick="calculate()">Ans</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>Created By : <span class="name">Rajput Khushal Singh</span></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/calculator.js"></script>
+  </body>
+</html>
