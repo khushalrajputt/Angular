@@ -15,17 +15,17 @@ const getData = (data) => {
   if(problemText.length === 0 && complexOperators.includes(data)){
     console.log("can'nt start with operator");
   }
-  else if(problemText.length !== 0 && ((complexOperators.includes(problemTextTail) && complexOperators.includes(data)) ) ){
+  else if(problemText.length !== 0 && (complexOperators.includes(problemTextTail) && complexOperators.includes(data))){
     clearr();
     problem.innerText += data;
     console.log("two operators are not allowed");
   }
-  else if(problemText.length !== 0 && ((basicOperators.includes(problemTextTail) && basicOperators.includes(data)) ) ){
+  else if(problemText.length !== 0 && (basicOperators.includes(problemTextTail) && basicOperators.includes(data))){
     clearr();
     problem.innerText += data;
     console.log("two operators are not allowed");
   }
-  else if(problemText.length !== 0 && ((basicOperators.includes(problemTextTail) && complexOperators.includes(data)) ) ){
+  else if(problemText.length !== 0 && (basicOperators.includes(problemTextTail) && complexOperators.includes(data))){
     console.log("two operators are not allowed");
   }
   else{
